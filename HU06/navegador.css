@@ -1,0 +1,91 @@
+/*---------*/
+/*NAVEGADOR*/
+/*---------*/
+nav {
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    gap: 47px;
+    border-bottom: 2px solid #ffd23f;
+}
+
+#navdiv {
+    display: flex;
+    align-items: center;
+    padding: 16.2px 54px 16.2px 16.2px;
+    justify-content: space-between;
+    flex: 1 0 0;
+}
+
+#navdiv button:not(#IniciarSesion) {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    color: white;
+}
+
+#IniciarSesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #ffd23f;
+    width: 160px;
+    font-size: medium;
+}
+
+#inputbuscar {
+    display: flex;
+    padding: 8.16px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    border: none;
+}
+
+#botonbuscar {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    color: white;
+}
+
+#divbuscador {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    background: white;
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width: 900px){
+    #navdiv{
+        display: none;
+    }
+    .menu {
+        display: block;
+        padding-right: 50px;
+    }
+    .menu svg{
+        border: 3px solid #000000;
+        border-radius: 8%;
+        width: fit-content;
+        padding: 5px 5px 5px 5px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}

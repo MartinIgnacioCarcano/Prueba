@@ -1,0 +1,262 @@
+/*Generales*/
+*{
+    font-family: "Inter", sans-serif;
+}
+body {
+    background-color: #232222;
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    gap: 30px;
+}
+
+button {
+    background-color: #ffd23f;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+button:hover {
+    background-color: rgba(255, 210, 63, 0.7);
+}
+
+h2 {
+    font-size: 33px;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/*--------------*/
+/*---PANTALLA---*/
+/*--------------*/
+.pantallaCompleta {
+    padding: 10px 50px 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.titulo {
+    border-bottom: 1px solid #ffffff;
+    width: fit-content;
+}
+
+.titulo h2 {
+    margin: 10px;
+}
+
+.pantalla {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+}
+
+.item h3 {
+    margin: 5px;
+}
+
+.item input {
+    padding-left: 20px;
+    font-size: 28px;
+    font-family: "Inter", sans-serif;
+    height: 50px;
+    color: #ffffff;
+    background-color: #111111;
+    border-radius: 8px;
+    border: 1px solid #000000;
+}
+
+#contraseña {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#contraseña a {
+    font-size: 19px;
+    color: #ffd23f;
+    padding-bottom: 5px;
+}
+
+/*BOTONES*/
+.botones {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 50px 5px 50px;
+}
+
+
+/*-----------------------*/
+/*---CONTENEDOR FOOTER---*/
+/*-----------------------*/
+footer {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100vw;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    color: #ffffff;
+    border-top: 2px solid #ffd23f;
+}
+
+.footer {
+    background-color: #232222;
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100vw;
+}
+
+/*Tamaño textos*/
+.footer p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.footer h5 {
+    margin: 0;
+    font-size: 19px;
+}
+
+/*Titulo de section footer*/
+.footer-titulo {
+    border-bottom: 0.5px solid #ffd23f;
+}
+
+.contenedor-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+#contactos,
+#redes-sociales {
+    gap: 15px;
+}
+
+/*iMAGEN*/
+.footer-img {
+    display: flex;
+    align-items: center;
+    height: 210px;
+}
+
+.footer-img img {
+    height: 192px;
+    width: 192px;
+}
+
+@media (max-width: 1330px) {
+    .item {
+        width: 450px;
+        min-width: 430px;
+    }
+
+    .fila {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 920px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-footer {
+        width: 250px;
+    }
+
+    .footer-img {
+        display: none;
+    }
+
+    .footer-titulo h5 {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .fila {
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    .botones {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .pantallaCompleta {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 90vw;
+    }
+    .pantalla{
+        width: 90vw;
+    }
+    
+    #navdiv{
+        display: none;
+    }
+    .menu {
+        display: block;
+        padding-right: 50px;
+    }
+    .menu svg{
+        border: 3px solid #000000;
+        border-radius: 8%;
+        width: fit-content;
+        padding: 5px 5px 5px 5px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+}
